@@ -1,0 +1,135 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body
+{
+    overflow: hidden;
+}
+
+.webgl
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+}
+
+h5{
+    color: white;
+}
+
+button {
+    position:absolute;
+    top:90%;
+    left:50%;
+    transform: translate(-50%, -90%);
+    width: 8vw;
+    height: 3vw;
+    z-index: 1;
+    font-size: 1.8vw;
+    padding: 0.5rem;
+
+    font-family: button;
+    border: none;
+    background: transparent;
+  
+    text-transform: uppercase;
+  
+    overflow: hidden;
+  }
+  
+  button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.2;
+    background: black;
+    z-index: -1;
+  }
+  
+  button:hover {
+    background: lightskyblue;
+  }
+  
+  button span:nth-child(1) {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, #004d99);
+    animation: animate1 1s linear infinite;
+  }
+  
+  @keyframes animate1 {
+    0% {
+      transform: translateX(-100%);
+    }
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  
+  button span:nth-child(2) {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #fff, #004d99);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes animate2 {
+    0% {
+      transform: translatey(-100%);
+    }
+    100% {
+      transform: translatey(100%);
+    }
+  }
+  
+  button span:nth-child(3) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #fff, #004d99);
+    animation: animate3 1s linear infinite;
+  }
+  
+  @keyframes animate3 {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+  
+  button span:nth-child(4) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(to right, #fff, #004d99);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.5s;
+  }
+  
+  @keyframes animate4 {
+    0% {
+      transform: translatey(100%);
+    }
+    100% {
+      transform: translatey(-100%);
+    }
+  }
